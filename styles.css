@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.stephidden {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+.stephidden h2 {
+    margin-top: 0;
+}
+
+.stepshow {
+    display: block !important;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="checkbox"],
+button {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}

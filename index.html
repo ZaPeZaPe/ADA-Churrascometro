@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churrascômetro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="cadastro" class="stephidden">
+        <h2>Informações Pessoais</h2>
+        <form>
+            <div>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div>
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" required>
+            </div>
+            <div>
+                <label for="consent">Aceito receber e-mails com promoções:</label>
+                <input type="checkbox" id="consent" checked>
+            </div>
+            <div>
+                <button id="continue">Próximo</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="participantes" class="stephidden">
+        <h2>Quantidade de Pessoas</h2>
+        <form>
+            <div>
+                <label for="men">Homens:</label>
+                <input type="number" id="men" min="0" required>
+            </div>
+            <div>
+                <label for="women">Mulheres/Adultos:</label>
+                <input type="number" id="women" min="0" required>
+            </div>
+            <div>
+                <label for="children">Crianças:</label>
+                <input type="number" id="children" min="0" required>
+            </div>
+            <div>
+                <label for="drinkers">Pessoas que bebem bebidas alcoólicas:</label>
+                <input type="number" id="drinkers" min="0">
+            </div>
+            <div>
+                <button id="calculate">Calcular</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="resultado" class="stephidden">
+        <h2>Resultado</h2>
+        <table id="resultTable">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="resultados-anteriores" class="stephidden">
+        <h2>Histórico de Resultados:</h2>
+        
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
